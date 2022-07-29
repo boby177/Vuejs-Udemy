@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="app">
+    <posts></posts>
+</div>
+
+
+<script 
+src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+</script>
+
+
+<script>
+// Create vue component 
+    Vue.component('posts', {
+        template: `<h1>Hellow</h1>`
+    })
+
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello'
+        }
+    })
+
+</script>

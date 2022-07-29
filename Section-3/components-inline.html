@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="app">
+    <!-- inline component vue -->
+    <posts inline-template>
+        <h1 @click="display">Hellowes</h1>
+    </posts>
+</div>
+
+
+<script 
+src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+</script>
+
+
+<script>
+// Create vue component 
+    Vue.component('posts', {
+        data() {
+
+            return {
+
+            }
+        },
+        methods: {
+            display(){
+                console.log('hi');
+            }
+        }
+    })
+
+    let vm = new Vue({
+        el: '#app',
+    })
+
+</script>
